@@ -197,7 +197,7 @@ string IntOrDoubleMatrix()
 
 void FindElementInt(int[,] matrix, int[] coordinates)
 {
-    if (coordinates[0] > matrix.GetLength(0) || coordinates[1] > matrix.GetLength(1))
+    if (coordinates[0] > matrix.GetLength(0) - 1 || coordinates[1] > matrix.GetLength(1) - 1)
     {
         Console.WriteLine("Такого элемента нет");
     }
@@ -212,7 +212,7 @@ void FindElementInt(int[,] matrix, int[] coordinates)
 
 void FindElementDouble(double[,] matrix, int[] coordinates)
 {
-    if (coordinates[0] > matrix.GetLength(0) || coordinates[1] > matrix.GetLength(1))
+    if (coordinates[0] > matrix.GetLength(0) - 1 || coordinates[1] > matrix.GetLength(1) - 1)
     {
         Console.WriteLine("Такого элемента нет");
     }
