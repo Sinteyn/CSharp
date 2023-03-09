@@ -45,32 +45,38 @@ void FillArrayInt(int[,] matrix, int[] minMax)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rand.Next(minMax[0], minMax[1]);
+            matrix[i, j] = rand.Next(minMax[0], minMax[1] + 1);
         }
     }
 }
 
-double[,] CreateArrayDouble(){
-        int row = EnterValuesInt("Введите кол-во строк матрицы");
-    while(row <= 0){
+double[,] CreateArrayDouble()
+{
+    int row = EnterValuesInt("Введите кол-во строк матрицы");
+    while (row <= 0)
+    {
         Console.WriteLine("Неккоректный ввод");
         row = EnterValuesInt("Введите кол-во строк матрицы");
     }
     int column = EnterValuesInt("Введите кол-во столбцов матрицы");
-    while(column <= 0){
+    while (column <= 0)
+    {
         Console.WriteLine("Неккоректный ввод");
         column = EnterValuesInt("Введите кол-во столбцов матрицы");
     }
     return new double[row, column];
 }
 
-int[,] CreateArrayint(){
+int[,] CreateArrayint()
+{
     int row = EnterValuesInt("Введите кол-во строк матрицы");
-    while(row <= 0){
+    while (row <= 0)
+    {
         row = EnterValuesInt("Неккоректный ввод. Введите кол-во строк матрицы");
     }
     int column = EnterValuesInt("Введите кол-во столбцов матрицы");
-    while(column <= 0){
+    while (column <= 0)
+    {
         column = EnterValuesInt("Неккоректный ввод. Введите кол-во столбцов матрицы");
     }
     return new int[row, column];
@@ -147,14 +153,16 @@ int[] EnterCoordinates()
     int[] coordinates = new int[2];
     int row = EnterValuesInt("Введите строку искомого элемента в матрице");
 
-    if(row < 0){
+    if (row < 0)
+    {
         Console.WriteLine("Неккоректный ввод");
         row = EnterValuesInt("Введите строку искомого элемента в матрице");
     }
 
     int column = EnterValuesInt("Введите столбец искомого элемента в матрице");
 
-    if(column < 0){
+    if (column < 0)
+    {
         Console.WriteLine("Неккоректный ввод");
         column = EnterValuesInt("Введите столбец искомого элемента в матрице");
     }
