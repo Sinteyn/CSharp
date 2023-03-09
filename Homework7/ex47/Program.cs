@@ -32,7 +32,7 @@ int EnterValuesInt(string massage)
     Console.WriteLine(massage);
     string val = Console.ReadLine()!;
 
-    while (!int.TryParse(val, out int i))
+    while (!int.TryParse(val, out int i) || int.Parse(val) <= 0)
     {
         Console.WriteLine("Неккоректный ввод. " + massage);
         val = Console.ReadLine()!;
