@@ -53,7 +53,7 @@ void PrintArrayInt(int[,,] matrix)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
-                Console.Write("{0, 8}", matrix[j, k, i]);
+                Console.Write("{0, 8}", matrix[i, j, k]);
             }
             Console.WriteLine();
             Console.WriteLine();
@@ -83,7 +83,7 @@ void PrintIndexingArray(int[,,] matrix)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
-                Console.Write("{0, 10}", matrix[j, k, i] + "(" + j + "," + k + "," + i + ")");
+                Console.Write("{0, 10}", matrix[i, j, k] + "(" + i + "," + j + "," + k + ")");
             }
             Console.WriteLine();
             Console.WriteLine();
