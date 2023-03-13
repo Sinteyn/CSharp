@@ -92,7 +92,7 @@ int MinSummRow(int[,] matrix)
 
     for (int k = 1; k < sums.Length; k++)
     {
-        if (sums[k] <= summ)
+        if (sums[k] < summ)
         {
             summ = sums[k];
             ind = k;
