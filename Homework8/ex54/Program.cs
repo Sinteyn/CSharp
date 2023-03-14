@@ -83,10 +83,9 @@ void SortRows(int[,] matrix)
             memory[j] = matrix[i, j];
         }
         Array.Sort(memory);
-        Array.Reverse(memory);
-        for (int k = 0; k < memory.Length; k++)
-        {
-            matrix[i, k] = memory[k];
+        
+        for (int k = 0; k < memory.Length; k++){
+            matrix[i, matrix.GetLength(1) - k - 1] = memory[k];
         }
     }
 }
