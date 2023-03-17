@@ -24,7 +24,7 @@
 
 >M = 4; N = 8. -> 30
 
-[**Решение**](../Homework9/ex64/Program.cs)
+[**Решение**](../Homework9/ex66/Program.cs)
 
 ***
 
