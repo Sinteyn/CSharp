@@ -10,7 +10,7 @@
 
 >N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-[**Решение**](/Homework/Homework9/ex64/Program.cs)
+[**Решение**](../Homework9/ex64/Program.cs)
 
 ***
 
@@ -24,7 +24,7 @@
 
 >M = 4; N = 8. -> 30
 
-[**Решение**](/Homework/Homework9/ex66/Program.cs)
+[**Решение**](../Homework9/ex64/Program.cs)
 
 ***
 
@@ -38,6 +38,6 @@
 
 >m = 3, n = 2 -> A(m,n) = 29
 
-[**Решение**](/Homework/Homework9/ex68/Program.cs)
+[**Решение**](../Homework9/ex68/Program.cs)
 
 ***
